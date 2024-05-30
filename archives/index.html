@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
   <meta charset="utf-8">
   
   
@@ -36,10 +36,13 @@
 
 <meta name="generator" content="Hexo 7.2.0"></head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
+  <body>
+    <div
+      id="container"
+      class=""
+    >
+      <div id="wrap">
+        <header id="header">
   <div id="banner"></div>
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
@@ -58,7 +61,7 @@
         
           <a class="main-nav-link" href="/Damon_Blog/">首頁</a>
         
-          <a class="main-nav-link" href="/Damon_Blog/archives">部落格</a>
+          <a class="main-nav-link" href="/Damon_Blog/blog">部落格</a>
         
           <a class="main-nav-link" href="/Damon_Blog/about">關於我</a>
         
@@ -77,8 +80,8 @@
   </div>
 </header>
 
-      <div class="outer">
-        <section id="main">
+        <div class="outer">
+          <section id="main">
   
   
     
@@ -133,8 +136,7 @@
 
 
 </section>
-        
-          <aside id="sidebar">
+           <aside id="sidebar">
   
     
 
@@ -187,10 +189,9 @@
   </div>
 
   
-</aside>
-        
-      </div>
-      <footer id="footer">
+</aside> 
+        </div>
+        <footer id="footer">
   
   <div class="outer">
     <div id="footer-info" class="inner">
@@ -201,17 +202,16 @@
   </div>
 </footer>
 
-    </div>
-    <nav id="mobile-nav">
+      </div>
+      <nav id="mobile-nav">
   
     <a href="/Damon_Blog/" class="mobile-nav-link">首頁</a>
   
-    <a href="/Damon_Blog/archives" class="mobile-nav-link">部落格</a>
+    <a href="/Damon_Blog/blog" class="mobile-nav-link">部落格</a>
   
     <a href="/Damon_Blog/about" class="mobile-nav-link">關於我</a>
   
-</nav>
-    
+</nav> 
 
 
 <script src="/Damon_Blog/js/jquery-3.6.4.min.js"></script>
@@ -230,6 +230,24 @@
 
 
 
-  </div>
-</body>
+    </div>
+
+    <style>
+      .fullPage #main {
+        width: 100%;
+        float: none;
+        margin: 0;
+      }
+      #DAMON {
+        text-align: center;
+      }
+
+      /* 隱藏日期區塊 和右下角share 以及footer*/
+      .fullPage .article-meta,
+      .fullPage .article-header,
+      .fullPage .article-footer {
+        display: none;
+      }
+    </style>
+  </body>
 </html>
